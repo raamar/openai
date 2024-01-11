@@ -1,0 +1,19 @@
+{
+  "name": "openai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "DOTENV_CONFIG_PATH=.env node -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-line-reader": "^1.0.0",
+    "dotenv": "^16.3.1",
+    "openai": "^4.24.2"
+  },
+  "type": "module"
+}
