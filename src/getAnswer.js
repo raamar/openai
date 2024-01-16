@@ -11,9 +11,13 @@ const getAnswer = async (text) => {
     stream: true,
   })
 
+  let answer = ''
+
   for await (const chunk of stream) {
-    process.stdout.write(chunk.choices[0]?.delta?.content || '')
+    answer += chunk.choices[0]?.delta?.content || ''
   }
+
+  return answer
 }
 
 export default getAnswer
